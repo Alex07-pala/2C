@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registro de Asistencia</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Registro de Asistencia</h1>
+    <form action="insertar_asistencia.php" method="POST">
+      <label for="NIE">NIE:</label>
+      <input type="text" id="NIE" name="NIE" required /><br /><br />
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required /><br /><br />
+
+      <label for="grado">Grado:</label>
+      <select id="grado" name="grado" required>
+        <option value="1">Primer Año</option>
+        <option value="2">Segundo Año</option>
+        <option value="3">Tercer Año</option>
+        <!-- Añadir más grados si es necesario --></select
+      ><br /><br />
+
+      <label for="seccion">Sección:</label>
+      <select id="seccion" name="seccion" required>
+        <option value="1">A</option>
+        <option value="2">B</option>
+        <option value="3">C</option>
+        <!-- Añadir más secciones si es necesario --></select
+      ><br /><br />
+
+      <label for="tecnico">Técnico:</label>
+      <input type="text" id="tecnico" name="tecnico" /><br /><br />
+
+      <label for="general">General:</label>
+      <input type="text" id="general" name="general" /><br /><br />
+
+      <label for="curso">Curso:</label>
+      <select id="curso" name="curso" required>
+        <option value="1">Matemáticas</option>
+        <option value="2">Ciencias</option>
+        <option value="3">Historia</option>
+        <!-- Añadir más cursos si es necesario --></select
+      ><br /><br />
+
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha" required /><br /><br />
+
+      <label for="estado">Estado:</label>
+      <select id="estado" name="estado" required>
+        <option value="Presente">Presente</option>
+        <option value="Ausente">Ausente</option>
+        <option value="Tarde">Tarde</option></select
+      ><br /><br />
+
+      <input type="submit" value="Registrar Asistencia" />
+    </form>
+  </body>
+</html>
